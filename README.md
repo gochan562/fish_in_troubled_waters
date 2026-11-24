@@ -3,8 +3,9 @@
 あなたは漁夫ではなく… なんと鷸！蚌をなるべく長く啄みながら、漁夫の網がかかるのを避けろ！
 
 ## ウェブサイト
+直接ブラウザ内で遊べます！
 
-
+https://fishintroubledwaters.netlify.app/
 
 ## コントロール
 
@@ -20,6 +21,6 @@
 
 ## クレジット
 
-Duck by Poly by Google [CC-BY] via Poly Pizza
-Clam by Poly by Google [CC-BY] via Poly Pizza
-Fishing Net by J-Toastie [CC-BY] via Poly Pizza
+- Duck by Poly by Google [CC-BY] via Poly Pizza
+- Clam by Poly by Google [CC-BY] via Poly Pizza
+- Fishing Net by J-Toastie [CC-BY] via Poly Pizza
