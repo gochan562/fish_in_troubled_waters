@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <meta name="theme-color" content="#7fd4cf" />
+  <title>Fish in Troubled Waters</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🐟</text></svg>" />
+  <script type="module" crossorigin src="/assets/index-Cf0puZ_e.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-CvcLIWzD.css">
+</head>
+<body>
+  <div id="app">
+    <canvas id="game-canvas"></canvas>
+
+    <!-- Cinematic frame -->
+    <div id="vignette"></div>
+    <div id="flash"></div>
+
+    <!-- HUD -->
+    <div id="hud" class="hidden">
+      <div id="score-panel">
+        <div class="score-row">
+          <span class="score-label">Score</span>
+          <span id="score-value" class="score-value">0</span>
+        </div>
+        <div class="score-row best">
+          <span class="score-label">Best</span>
+          <span id="best-value" class="score-value">0</span>
+        </div>
+      </div>
+      <div id="hold-panel" class="hidden">
+        <div id="multiplier">×1.0</div>
+        <div id="hold-time">0.0s</div>
+      </div>
+      <div id="hint">Hold to steal the clam.<br/>Release before the fisherman nets you.</div>
+    </div>
+
+    <!-- Title screen -->
+    <div id="title-screen" class="screen">
+      <div class="screen-inner">
+        <div class="title-art">🎣</div>
+        <h1 class="game-title">Fish in<br/><span>Troubled Waters</span></h1>
+        <p class="subtitle">How long can you get away with it?</p>
+        <p class="instructions">Hold to steal. Release before he catches you.</p>
+        <button id="start-btn" class="btn btn-primary">Steal the clam</button>
+        <div class="title-best hidden" id="title-best">Best haul: <span id="title-best-value">0</span></div>
+      </div>
+    </div>
+
+    <!-- Result screen (escape or caught) -->
+    <div id="result-screen" class="screen hidden">
+      <div class="screen-inner">
+        <div id="result-icon" class="title-art">🎉</div>
+        <h2 id="result-title">Clean getaway!</h2>
+        <p id="result-message" class="subtitle"></p>
+        <div id="result-stats">
+          <div class="stat"><span class="stat-value" id="result-score">0</span><span class="stat-label" id="result-score-label">score</span></div>
+          <div class="stat"><span class="stat-value" id="result-time">0.0s</span><span class="stat-label">held</span></div>
+          <div class="stat"><span class="stat-value" id="result-mult">×1.0</span><span class="stat-label">peak</span></div>
+        </div>
+        <div id="result-best" class="title-best hidden">New best haul!</div>
+        <button id="retry-btn" class="btn btn-primary">Try again <span class="key-cap">R</span></button>
+      </div>
+    </div>
+
+    <button id="mute-btn" aria-label="Toggle sound">🔊</button>
+  </div>
+</body>
+</html>
